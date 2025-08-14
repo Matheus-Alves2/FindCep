@@ -1,12 +1,11 @@
-import { StyleSheet, Pressable, Text } from "react-native";
-
+import { Pressable, StyleSheet, Text } from "react-native"
 
 export const Botao = ({tituloBotao}) => {
-    <Pressable style={StyleSheet.botao}>
-        <Text style={StyleSheet.textoBotao}>
-            {tituloBotao}
-        </Text>
-    </Pressable>
+    return (
+        <Pressable style={styles.botao}>
+            <Text style={styles.textoBotao}>{tituloBotao}</Text>
+        </Pressable>
+    )
 }
 
 const styles = StyleSheet.create({
@@ -17,7 +16,7 @@ const styles = StyleSheet.create({
         borderBottomRightRadius: 10,
         paddingVertical: 10,
         width: '70%',
-        alignItems: 'center'
+        alignItems: 'center',
     },
     textoBotao:{
         color: '#FFFFFF',
