@@ -1,36 +1,36 @@
 import { StyleSheet, Text, View } from "react-native"
 
-export const Card = () => {
+export const Card = ({cep,logradouro,bairro,uf,estado,regiao}) => {
     return(
         <View style={styles.cardzin}>
             <View>
                 <Text style={styles.tituloValor}>CEP:</Text>
-                <Text style={styles.Valor}>Dado 01</Text>
+                <Text style={styles.Valor}>{cep}</Text>
             </View>
 
             <View>
                 <Text style={styles.tituloValor}>Logradouro:</Text>
-                <Text style={styles.Valor}>Dado 02</Text>
+                <Text style={styles.Valor}>{logradouro}</Text>
             </View>
 
             <View>
                 <Text style={styles.tituloValor}>Bairro:</Text>
-                <Text style={styles.Valor}>Dado 03</Text>
+                <Text style={styles.Valor}>{bairro}</Text>
             </View>
 
             <View>
                 <Text style={styles.tituloValor}>UF:</Text>
-                <Text style={styles.Valor}>Dado 04</Text>
+                <Text style={styles.Valor}>{uf}</Text>
             </View>
 
             <View>
                 <Text style={styles.tituloValor}>Estado</Text>
-                <Text style={styles.Valor}>Dado 05</Text>
+                <Text style={styles.Valor}>{estado}</Text>
             </View>
 
             <View>
                 <Text style={styles.tituloValor}>Região:</Text>
-                <Text style={styles.Valor}>Dado 06</Text>
+                <Text style={styles.Valor}>{regiao}</Text>
             </View>
         </View>
     )

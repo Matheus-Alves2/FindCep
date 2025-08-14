@@ -1,10 +1,16 @@
 import { StyleSheet, Text, TextInput, View } from "react-native"
 
-export const Input = () => {
+export const Input = ({valorCep, onChangeValorCep}) => {
     return(
         <View>
             <Text style={styles.campoInput}>CEP</Text>
-            <TextInput placeholder="00000-000" style={styles.input} maxLength={8}></TextInput>
+            <TextInput 
+            keyboardType="numeric"
+            placeholder="00000-000" 
+            style={styles.input} maxLength={8} 
+            value={valorCep}
+            onChangeText={onChangeValorCep}
+            ></TextInput>
         </View>
     )
 }
