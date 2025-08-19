@@ -1,4 +1,4 @@
-<!-- Projeto CJ -->
+<!-- tralalero tralala -->
 
 # Welcome to your Expo app 👋
 
